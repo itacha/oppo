@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    /*ie6*/
+    vertical-align: middle;
+}
+
+a {
+    color: rgb(126, 123, 145);
+    text-decoration: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+    font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    color: #000;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.shortcut {
+    height: 20px;
+    line-height: 20px;
+    background-color: rgb(0, 155, 114);
+}
+
+.shortcut li {
+    float: left;
+}
+
+.shortcut li a {
+    color: #fff;
+}
+
+.spacer {
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+    margin: 0 12px 0;
+}
+
+.header {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.logo a {
+    display: block;
+    background: url('images/oppologo.png') no-repeat;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.nav li {
+    float: left;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.nav li a {
+    color: rgb(126, 123, 145);
+}
+
+.current {
+    border-bottom: 2px solid rgb(0, 155, 114);
+}
+
+.nav a:hover {
+    border-bottom: 2px solid rgb(0, 155, 114);
+}
+
+.title {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(126, 123, 145);
+    height: 52px;
+    line-height: 52px;
+}
+
+.product-l {
+    width: 772px;
+}
+
+.product2 {
+    margin-top: 14px;
+}
+
+.line {
+    float: left;
+    height: 1px;
+    width: 500px;
+    background-color: #ccc;
+    margin-top: 40px;
+}
+
+.xilie,
+.tese {
+    height: 80px;
+    line-height: 80px;
+}
+
+.xilie h3,
+.tese h3 {
+    font-size: 20px;
+    margin: 0 25px;
+    font-weight: 400;
+}
+
+.xilie-title {
+    font-size: 18px;
+    color: rgb(126, 123, 145);
+    height: 54px;
+    line-height: 54px;
+}
+
+.xilie-r li {
+    float: left;
+    background-color: #fff;
+    width: 286px;
+    height: 270px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 50px 0 40px;
+}
+
+.xilie-r li img {
+    width: 160px;
+    height: 200px;
+}
+
+.p-color {
+    font-size: 16px;
+    color: #000;
+    margin-top: 36px;
+}
+
+.p-tese {
+    color: rgb(126, 123, 145);
+    font-size: 14px;
+}
+
+.zhanshi img {
+    margin-right: 10px;
+}
+
+.footer {
+    margin-top: 160px;
+}
+
+.mod {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 40px;
+}
+
+.mod-l dl {
+    float: left;
+    width: 200px;
+}
+
+.mod-l dt {
+    font-size: 16px;
+    height: 40px;
+}
+
+.mod-l dd {
+    margin-top: 10px;
+}
+
+.number {
+    font-size: 30px;
+}
+
+.hour {
+    font-size: 14px;
+}
+
+.phone {
+    width: 210px;
+}
+
+.phone img,
+.phone p {
+    float: right;
+}
+
+.supply {
+    height: 60px;
+    line-height: 60px;
+    color: rgb(126, 123, 145);
+}
+
+.guanzhu {
+    height: 60px;
+    line-height: 60px;
+}
+
+.weibo,
+.weixin,
+.qq {
+    background-image: url('images/weixin.png');
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.weibo {
+    background-position: -5px -6px;
+}
+
+.weixin {
+    background-position: -47px -5px;
+}
+
+.qq {
+    background-position: -87px -5px;
+}
+
+.col img {
+    width: 115px;
+    -webkit-transition: -webkit-transform 0.8s ease;
+    transition: transform 0.8s ease;
+}
+
+.navpopup-products {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 1500px;
+    top: 80px;
+    left: 0;
+    overflow: hidden;
+}
+
+.navpro-content {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes move {
+    0% {}
+    100% {
+        transform: matrix(1, 0, 0, 1, 0, 1);
+    }
+}
+
+.col {
+    animation: move;
+    animation-duration: 0.8s;
+    transform: matrix(1, 0, 0, 1, 0, 200);
+    animation-fill-mode: forwards;
+}
+
+.row .col:nth-child(2) {
+    animation-delay: .8s;
+}
+
+.row .col:nth-child(3) {
+    animation-delay: 1.6s;
+}
